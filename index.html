@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <style>
+
+        *{
+            font-family: Rubik,sans-serif;
+    scroll-behavior: smooth;
+        }
+
+      #box{
+        box-sizing: border-box;
+        border: 2px solid black;
+        display: inline-block;
+        padding: 10px;
+      }
+
+      img {
+        height: 160px;
+        width: 290px;
+      }
+
+      #head
+      {
+        font-weight: bolder;
+        font-size: 23px;
+      }
+
+      p{
+        display: inline;
+      }
+
+      p#blue
+      {
+        color: rgb(110 150 207);
+        font-size: large;
+        font-weight: 700;
+        margin:5px;
+      }
+
+      #ActPrice
+      {
+        margin:5px;
+        font-size: large;
+        font-weight: 700;
+      }
+
+      #discount
+      {
+        margin:5px;
+        padding:3px;
+        font-size: 14px;
+        font-weight: 700;
+        color:white;
+        box-sizing: border-box;
+        background-color:rgb(75, 203, 160);
+        border:1px solid rgb(75, 203, 160);
+        border-radius: 6px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <img src="imggLB.jpg" alt="Image not found" />
+
+     <pre id = "head">Web Development Master 
+Course @dot Batch</pre>
+
+      <p id="blue"> &#8377; 4500</p>
+      <p id="ActPrice"> <del>&#8377; 6999 </del></p>
+      <p id="discount">42% Off</p>
+    </div>
+  </body>
+</html>

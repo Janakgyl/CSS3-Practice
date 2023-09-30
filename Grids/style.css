@@ -1,0 +1,27 @@
+.container {
+  height: 500px;
+  background-color: brown;
+  border:3px solid black;
+  display: grid;
+  grid-template-columns: 150px 150px 150px 250px;
+  /* grid-template-rows: 100px 70px 60px 100px 80px 80px; */
+  grid-template-rows: repeat(4,1fr);
+
+  gap:20px;
+}
+
+.box {
+    /* height:80px;
+    width: 80px; */
+    background-color:aqua;
+    border:2px solid black;
+}
+
+
+/* Grid Item Property */
+
+#box1
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

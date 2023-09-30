@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radial Gradient</title>
+    <style>
+      #my-div {
+        border: 1px solid black;
+        margin: 10px;
+        height: 300px;
+        width: 500px;
+        background-image: radial-gradient(circle, red, blue);
+        background-image: radial-gradient(circle, red 5%, yellow 20%, orange);
+        /* background-image: conic-gradient(90deg, left red 50deg, yellow 20deg, orange 130deg); */
+        background-image: conic-gradient(red, yellow, green);
+        background-image: repeating-conic-gradient(red 10%, yellow 20%);
+        border-radius: 50%;
+        background-image: repeating-conic-gradient(
+          red 0deg 10deg,
+          yellow 10deg 20deg,
+          blue 20deg 30deg
+        );
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="my-div">This is a radial Gradient</div>
+  </body>
+</html>
