@@ -1,0 +1,50 @@
+.container {
+  height: 600px;
+  background-color: yellow;
+  border: 2px solid black;
+
+  display: grid;
+  grid-template-columns: 100px 300px;
+  grid-template-rows: 30px 1fr 30px;
+  grid-gap: 3px;
+  grid-template-areas:
+    "hd hd"
+    "side main "
+    "ft ft";
+}
+
+.box {
+  background-color: blueviolet;
+  border: 1px solid black;
+}
+
+#header {
+  grid-area: hd;
+}
+
+#sidebar {
+  grid-area: side;
+}
+
+#content {
+  grid-area: main;
+}
+
+#footer {
+  grid-area: ft;
+}
+
+/* Nested Grid */
+.childGrid {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2px;
+}
+
+.element {
+  border: 2px solid black;
+  background-color: hotpink;
+}
