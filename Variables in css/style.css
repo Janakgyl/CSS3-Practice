@@ -1,0 +1,30 @@
+/* :root{
+    --text-color:hotpink;
+} */
+
+
+*{
+    --text-color:hotpink;
+}
+
+.container
+{
+    height:200px;
+    width:200px;
+    background-color: green;
+    box-shadow: 0 0 20px #000;
+
+}
+
+h1{
+    color:var(--text-color);
+}
+
+.box
+{
+    border:2px solid yellow;
+    /* Local variables */
+    --bg-color:red;
+    background-color: var(--bg-color);
+    /* color:var(--text-color); */
+}

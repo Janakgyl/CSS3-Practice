@@ -1,0 +1,52 @@
+.container {
+  height: 40vh;
+  width: 100vw;
+  background-color: yellow;
+  border: 2px solid red;
+  color: green;
+}
+
+.box {
+  height: 100%;
+  width: 220px;
+  background-color: aqua;
+  border: 2px solid black;
+
+  animation-name: janak;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes janak {
+  0% {
+    width: 220px;
+    background-color: aqua;
+  }
+
+  33% {
+    width: 450px;
+    background-color: blue;
+  }
+
+  66% {
+    width: 600px;
+    background-color: brown;
+  }
+
+  100% {
+    width: 800px;
+    background-color: bisque;
+  }
+}
+
+/* @keyframes janak {
+  from {
+    width: 220px;
+  }
+
+  to {
+    width: 400px;
+  }
+} */
